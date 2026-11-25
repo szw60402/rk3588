@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+logs/
+models/*.rknn
+models/*.onnx
+models/*.pt
+
+# 现场图片和标注先不入库
+data/
+*.jpg
+*.png

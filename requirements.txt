@@ -1,0 +1,7 @@
+opencv-python>=4.9
+numpy
+PyYAML
+pymodbus==3.6.9
+
+# RK3588 板端按厂商 SDK 单独安装 rknn-toolkit-lite2
+# GPIO 待定：libgpiod 或板厂 gpio 工具

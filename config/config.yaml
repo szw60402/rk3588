@@ -1,0 +1,31 @@
+camera:
+  index: 0
+  width: 1280
+  height: 720
+
+detector:
+  model_path: models/best.rknn
+  conf_threshold: 0.45
+  nms_threshold: 0.45
+  class_names: ["defect"]
+
+# 缺陷数量写入保持寄存器：0=OK，>0=NG
+modbus:
+  enabled: false
+  host: 192.168.1.10
+  port: 502
+  unit_id: 1
+  register: 0
+
+gpio:
+  enabled: false
+  chip: gpiochip4
+  line: 12
+  pulse_ms: 100
+
+rtsp:
+  enabled: false
+  url: rtsp://127.0.0.1:8554/inspection
+  width: 1280
+  height: 720
+  fps: 15
